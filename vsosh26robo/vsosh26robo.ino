@@ -5,10 +5,10 @@
 // =================== НАСТРОЙКИ ПОД ВАШЕ ЖЕЛЕЗО ===================
 
 // --- ULN2003 pins (IN1..IN4) ---
-const uint8_t PIN_M1 = 2;
-const uint8_t PIN_M2 = 3;
-const uint8_t PIN_M3 = 4;
-const uint8_t PIN_M4 = 5;
+const uint8_t PIN_M1 = 38;
+const uint8_t PIN_M2 = 39;
+const uint8_t PIN_M3 = 40;
+const uint8_t PIN_M4 = 41;
 
 // --- UI ---
 const uint8_t PIN_MODE_POT = A1;  // потенциометр выбора режима (0..1023)
@@ -20,9 +20,9 @@ const uint8_t PIN_BLACK_SENSOR = A0;
 int BLACK_THRESHOLD = 500;  // подберите по Serial (ниже объясню)
 
 // --- Servos ---
-const uint8_t PIN_SERVO_SHOULDER = 9;
-const uint8_t PIN_SERVO_ELBOW = 10;
-const uint8_t PIN_SERVO_PEN = 11;
+const uint8_t PIN_SERVO_SHOULDER = 30;
+const uint8_t PIN_SERVO_ELBOW = 32;
+const uint8_t PIN_SERVO_PEN = 34;
 
 // Для стабильности серво лучше microseconds диапазон
 int SERVO_US_MIN = 900;
