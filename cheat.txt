@@ -1,0 +1,30 @@
+Подключение пинов:
+int BLS = A0;
+int otherModule = 4;
+Прослушивание/прием:
+Порта:
+Serial.begin(9600);
+Датчиков:
+analogRead(BLS);
+digitalRead(otherModule);
+Передача:
+analogWrite(servo1, 0...254);
+digitalWrite(otherModule, HIGH/LOW);
+Подключение серво:
+Создать объекты для каждого:
+Servo servo1;
+Servo servo2;
+Указываем пины серво:
+int servoPin1 = 5;
+int servoPin2 = 6;
+Подключить к пинам:
+servo1.attach(servoPin1);
+servo2.attach(servoPin2);
+Движение серво:
+servo1.write(i);
+servo2.write(i);
+Плавное движение серво:
+for(int i=0;i<=180;i++){
+myservo.write(i);
+delay(20);
+}
